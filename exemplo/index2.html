@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 2</title>
+    <style>
+        body {
+            width: 100%;
+        }
+
+        .flex_container {
+            display: flex;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .flex-item-title-navbar {
+            width: 20%;
+        }
+
+        .flex-item-menu-navbar {
+            width: 20%;
+            align-self: center;
+            margin-left: auto;
+        }
+
+        .flex-item-siderbar {
+            width: 20%;
+        }
+
+        .flex-item-content {
+            padding: 50px 50px;
+            width: 80%;
+        }
+
+        .flex-item-section{
+            text-align: center;
+            width: 50%;
+            font-size: 30px;
+        }
+
+        .li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex_container">
+        <h1 class="flex-item-title-navbar">Seja bem vindo ao site</h1>
+        <nav class="flex-item-menu-navbar">
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Contatos</a>
+        </nav>
+
+    </header>
+    <section class="flex_container">
+        <article class="flex-item-siderbar">
+            <ul class="li">
+                <li><a href="">Meu linkedin<a></li>
+                <li><a href="">Instagram<a></li>
+                <li><a href="">GitHub<a></li>
+            </ul>
+        </article>
+        <aside class="flex-item-content">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <section class="flex_container">
+                <article class="flex-item-section">
+                    <h1>Deadpool</h1>
+                </article>
+                <aside class="flex-item-section">
+                    <h1>Lula Molusco</h1>
+                </aside>
+            </section>
+        </aside>
+    </section>
+</body>
+
+</html>
