@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aual 2 - Flex Direction</title>
+    <style>
+        body{
+            margin: auto;
+        }
+        .flex_container {
+            margin: 10px;
+            padding: 0;
+            display: flex;
+            list-style: none; 
+            justify-content: center;
+            align-items: center ;  
+        }
+
+        .flex_item {
+            background-color: blue;
+            padding: 10px;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .row {
+            flex-direction: row;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+            
+        }
+        .column{
+            flex-direction: column;
+            
+        }
+        .column-reverse{
+            flex-direction: column-reverse;
+        }
+        .row-reverse li{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="flex_container li">
+        <li class="flex_item">1</li>
+        <li class="flex_item">2</li>
+        <li class="flex_item">3</li>
+        <li class="flex_item">4</li>
+        <li class="flex_item">5</li>
+    </ul>
+    <ul class="flex_container row-reverse li">
+        <li class="flex_item">1</li>
+        <li class="flex_item">2</li>
+        <li class="flex_item">3</li>
+        <li class="flex_item">4</li>
+        <li class="flex_item">5</li>
+    </ul>
+    <ul class="flex_container column">
+        <li class="flex_item">1</li>
+        <li class="flex_item">2</li>
+        <li class="flex_item">3</li>
+        <li class="flex_item">4</li>
+        <li class="flex_item">5</li>
+    </ul>
+    <ul class="flex_container column-reverse">
+        <li class="flex_item">1</li>
+        <li class="flex_item">2</li>
+        <li class="flex_item">3</li>
+        <li class="flex_item">4</li>
+        <li class="flex_item">5</li>
+    </ul>
+</body>
+</html>
