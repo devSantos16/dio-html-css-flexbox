@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 4 - Flex flow</title>
+    <style>
+        body {
+            background-color: black;
+            
+        }
+
+        .flex-container {
+            padding: 5%;
+            margin: auto;
+            display: flex;
+            max-width: 100%;
+            /* alinha flex centralizado */
+            justify-content: center;
+            /* alinha column centralizado */
+            
+            border: 1px solid gray;
+        }
+        .column {
+            flex-flow: column wrap;
+            height: 500px;
+            margin: 0;
+        }
+
+        .item {
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 20%;
+            line-height: 50px;
+            border: 1px solid gray;
+            
+        }
+        .itemColumn {
+            background-color: black;
+            color: white;
+            margin: 0;
+            text-align: center;
+            width: 34%;
+            height: 20%;
+            line-height: 50px;
+            border: 1px solid gray;
+            
+        }
+
+        .default {
+            flex-flow: row nowrap;
+        }
+
+        .wrap {
+            flex-flow: row wrap;
+        }
+
+        
+        .r-nowwrap{
+            flex-flow: row-reverse nowrap;
+        }
+        h1{
+            width: 80%;
+            margin: 5% auto;
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Centralizado</h1>
+    <div class="flex-container default">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+    </div>
+    <div class="flex-container wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+    </div>
+    <div class="flex-container r-nowwrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+    </div>
+    <div class="flex-container column">
+        <div class="itemColumn">1</div>
+        <div class="itemColumn">2</div>
+        <div class="itemColumn">3</div>
+        <div class="itemColumn">4</div>
+        <div class="itemColumn">5</div>
+        <div class="itemColumn">5</div>
+        <div class="itemColumn">5</div>
+        <div class="itemColumn">5</div>
+        <div class="itemColumn">5</div>
+        <div class="itemColumn">5</div>
+        
+    </div>
+</body>
+
+</html>
