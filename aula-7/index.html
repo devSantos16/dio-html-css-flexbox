@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 7 - Align Content</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 400px;
+        border: 1px solid gray;
+        justify-content: flex-start;
+    }
+    .item{
+        background-color: blueviolet;
+        padding: 0 5px;
+        margin: 2px;
+        width: 20%;
+        height: 10%;
+        text-align: center;
+        border: 1px solid violet;
+    }
+    .center{
+        align-content: center;
+    }
+    .flex-start{
+        align-content: flex-start;
+    }
+    .flex-end{
+        align-content: flex-end;
+    }
+</style>
+<body>
+    <div class="container flex-start">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

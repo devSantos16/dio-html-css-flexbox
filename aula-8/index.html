@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 8 - Flex Grow</title>
+</head>
+<style>
+    .flex-container{
+        display: flex;
+        border: 2px solid black;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+    .item{
+        background-color: orangered;
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    .flex-grow-0{
+        flex-grow: 0;
+    }
+    .flex-grow-1{
+        flex-grow: 1;
+    }
+    .flex-grow-2{
+        flex-grow: 2;
+    }
+    .flex-grow-3{
+        flex-grow: 3;
+    }
+</style>
+<body>
+    <p>Flex grow 0</p>
+    <div class="flex-container">
+        <div class="item flex-grow-0">A</div>
+        <div class="item flex-grow-0">B</div>
+        <div class="item flex-grow-0">C</div>
+        <div class="item flex-grow-0">D</div>
+        <div class="item flex-grow-0">E</div>
+    </div>
+    <p>Flex grow 1</p>
+    <div class="flex-container">
+        <div class="item flex-grow-1">A</div>
+        <div class="item flex-grow-1">B</div>
+        <div class="item flex-grow-1">C</div>
+        <div class="item flex-grow-1">D</div>
+        <div class="item flex-grow-1">E</div>
+    </div>
+    <p>Flex grow misturado</p>
+    <div class="flex-container">
+        <div class="item flex-grow-1">A</div>
+        <div class="item flex-grow-2">B</div>
+        <div class="item flex-grow-1">C</div>
+        <div class="item flex-grow-3">D</div>
+        <div class="item flex-grow-3">E</div>
+    </div>
+    <p>Flex grow com conteudo</p>
+    <div class="flex-container">
+        <div class="item flex-grow-3">A</div>
+        <div class="item flex-grow-0">Bbbb</div>
+        <div class="item flex-grow-0">CAAAAAAA</div>
+        <div class="item flex-grow-3">D</div>
+        <div class="item flex-grow-3">E</div>
+    </div>
+</body>
+</html>
