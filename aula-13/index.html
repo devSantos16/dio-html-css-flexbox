@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 13: Align self</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 100%;
+            border: 2px solid blueviolet;
+            margin-bottom: 10px;
+            height: 500px;
+        }
+        .item{
+            background-color: blueviolet;
+            color: violet;
+            font-size: 24px;
+            margin: 5px;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start
+        }
+
+        .end{
+            align-self: flex-end
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item stretch">Teste</div>
+        <div class="item start">teste</div>
+        <div class="item end">teste</div>
+        <div class="item auto">teste</div>
+        <div class="item baseline">teste</div>
+    </div>
+</body>
+</html>
