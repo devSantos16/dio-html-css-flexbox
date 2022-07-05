@@ -1,220 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Flex Turismos</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            width: 100%;
-            margin: auto;
-        }
-
-        .container-header{
-            display: flex;
-            width: 100%;
-            height: 100px;
-            gap: 100px;
-            color: white;
-            font-weight: bold;
-            background-color: rgb(29, 29, 85);
-        }
-
-            .bloco-header-1{
-                font-weight: bold;
-            }
-
-            .bloco-header-2 {
-                display: flex;
-                gap: 20px;
-                list-style-type: none;
-                font-size: 15px;
-            }
-
-        .container-main{
-            display: flex;
-            width: 70%;
-            height: 500px;
-            margin: auto;
-        }
-
-            .bloco-main-1{
-                display: flex;
-                flex-direction: column;
-                
-            }
-            .item-main-h1{
-                margin: 0;
-                font-size: 44px;
-                color: rgb(29, 29, 85);
-            }
-            .item-main-button{
-                align-self: flex-start;
-                height: 40px;
-                width: 150px;
-                text-align: center;
-                background-color: rgb(29, 29, 85);
-                font-weight: bold;
-                border-radius: 10px;
-                line-height: 40px;
-                font-size: 15px;
-                
-            }
-        
-        .container-section{
-            display: flex;
-            margin: auto;
-            width: 70%;
-            gap: 50px;
-        }
-            
-            .bloco-section-2{
-                display: flex;
-                flex-direction: column;
-            }
-
-            .item-section-h2{
-                padding: 15px;
-                font-size: 40px;
-                border-left: 5px solid rgb(29, 29, 85);
-                margin: 5px 0;
-            }
-
-            .item-section-p{
-                font-size: 15px;
-            }
-        
-        .section-service-container{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 700px;
-            color: white;
-            gap: 20px;
-            
-        }
-            .bloco-section-service-1{
-                font-size: 32px;
-                padding: 50px 200px;
-                text-align: center;
-            }
-            .bloco-section-service-2{
-                display: flex;
-                align-items: flex-start;
-                text-align: center;
-                gap: 200px;
-            }
-            .bloco-item-section-service{
-                display: flex;
-                flex-direction: column;
-                margin: 0;
-                align-items: center;
-                gap: 30px;
-            }
-            .item-section-service-p{
-                font-weight: bold;
-                font-size: 25px;
-            }
-            .item-section-service-a{
-               background-color: white;
-               border-radius: 10px;
-               font-size: 15px;
-               width: 150px;
-               height: 30px;
-               line-height: 30px;
-               font-weight: bold;
-               text-decoration: none;
-               
-            }
-        .section-table-container{
-            display: flex;
-            width: 100%;
-            height: 400px;
-            gap: 150px;
-
-        }
-            .item-section-table{
-                padding: 20px;
-                border: 3px solid rgb(29, 29, 85);
-                border-radius: 5px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-end;
-            }
-            .section-table-h1{
-                border-bottom: 3px solid rgb(29, 29, 85);
-                width: 80%;
-                padding-bottom: 10px;
-                text-align: center;
-            }
-            .list-section-table{
-                font-size: 15px;
-                list-style-type: square;
-
-            }
-            .section-table-a{
-                margin-top: 50px;
-                height: 40px;
-                width: 150px;
-                text-align: center;
-                background-color: rgb(29, 29, 85);
-                font-weight: bold;
-                border-radius: 10px;
-                line-height: 40px;
-                font-size: 15px;
-            }
-
-        .footer-container{
-            display: flex;
-            height: 100px;
-            align-items: flex-end;
-            gap: 300px;
-            
-        }
-            .p-footer{
-                font-size: 15px;
-                color: white;
-            }
-            
-            
-        .justify-content-space-around{
-            justify-content: space-around;   
-        }
-
-        .justify-content-center{
-            justify-content: center;
-        }
-
-        .justify-content-top{
-            justify-content: flex-start;
-        }
-
-        .align-items-center{
-            align-items: center;
-        }
-        .blue{
-            color: rgb(29, 29, 85);
-        }
-        .background-blue{
-            background-color: rgb(29, 29, 85);
-        }
-        .format-a-white{
-            color: white;
-            text-decoration: none;
-
-        }.format-a-blue{
-            color: blue;
-            text-decoration: none;
-        }
-        /* Tem que arrumar */
-        .h1{
-           margin-top: 100px;
-           text-align: center;
-        }
-    </style>
 </head>
+
 <body>
     <header class="container-header justify-content-space-around align-items-center">
         <h1 class="bloco-header-1">FlexTurismos</h1>
@@ -228,7 +21,7 @@
         <div class="bloco-main-1 justify-content-center">
             <h1 class="item-main-h1">Flex <br>Turismos</h1>
             <p class="blue">O melhor serviço para você!</p>
-            <a class = "item-main-button format-a-white" href="">Saiba Mais!</a>
+            <a class="item-main-button format-a-white" href="">Saiba Mais!</a>
         </div>
         <div class="bloco-main-2">
             <div><img src="./images/0-main.png" alt="banner de apresentação"></div>
@@ -240,8 +33,10 @@
         </div>
         <div class="bloco-section-2">
             <h2 class="item-section-h2 blue">Quem Somos</h2>
-            <p class="item-section-p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-            <p class="item-section-p">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            <p class="item-section-p">It is a long established fact that a reader will be distracted by the readable
+                content of a page when looking at its layout. </p>
+            <p class="item-section-p">The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
         </div>
     </div>
     <div class="section-service-container background-blue justify-content-top">
@@ -249,16 +44,16 @@
             <h2>Serviços</h2>
         </div>
         <div class="bloco-section-service-2 justify-content-center">
-            <div class= "bloco-item-section-service">
+            <div class="bloco-item-section-service">
                 <div><img src="./images/icon-2.png" alt="hospedagens"></div>
                 <p class="item-section-service-p">Hospedagens</p>
-                <a class= "item-section-service-a" href="#">Comprar Agora</a>
+                <a class="item-section-service-a" href="#">Comprar Agora</a>
             </div>
 
             <div class="bloco-item-section-service">
-               <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
-               <p class="item-section-service-p">Pacotes de viagens</p>
-               <a class= "item-section-service-a blue" href="#">Comprar Agora</a>
+                <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
+                <p class="item-section-service-p">Pacotes de viagens</p>
+                <a class="item-section-service-a blue" href="#">Comprar Agora</a>
             </div>
             <div class="bloco-item-section-service">
                 <div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
@@ -269,7 +64,7 @@
     </div>
     <h1 class="h1">Planos</h1>
     <div class="section-table-container justify-content-center align-items-center">
-        
+
         <div class="item-section-table">
             <h3 class="section-table-h1">Plano 2</h3>
             <ul class="list-section-table blue blue">
@@ -277,7 +72,7 @@
                 <li>Serviços de quarto</li>
                 <li>Guia turístico</li>
             </ul>
-            <a class="section-table-a format-a-white href="#">Saiba Mais!</a>
+            <a class="section-table-a format-a-white href=" #">Saiba Mais!</a>
         </div>
 
         <div class="item-section-table">
@@ -289,7 +84,7 @@
                 <li>Roteiro de trilhas</li>
                 <li>Serviço personalizado</li>
             </ul>
-            <a class="section-table-a format-a-white href="#">Saiba Mais!</a>
+            <a class="section-table-a format-a-white href=" #">Saiba Mais!</a>
         </div>
         <div class="item-section-table">
             <h3 class="section-table-h1">Plano 3</h3>
@@ -309,4 +104,5 @@
         <p class="p-footer">Desenvolvido por:<b> Emanuel dos Santos Paz </b></p>
     </footer>
 </body>
+
 </html>
